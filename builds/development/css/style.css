@@ -165,7 +165,6 @@ header .fullheight {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  max-width: 2000px;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-end;
@@ -198,10 +197,6 @@ header .fullheight .hgroup h2 {
   text-align: center;
   text-shadow: #000000 0 0 40px;
 }
-/* line 29, ../../../components/sass/modules/_intro.scss */
-header .fullheight .hgroup h2 span {
-  display: none;
-}
 @media (min-width: 960px) {
   /* line 21, ../../../components/sass/modules/_intro.scss */
   header .fullheight .hgroup h2 {
@@ -209,7 +204,7 @@ header .fullheight .hgroup h2 span {
     font-size: 2.2em;
   }
 }
-/* line 43, ../../../components/sass/modules/_intro.scss */
+/* line 42, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p {
   text-align: center;
   font-size: 1.1em;
@@ -219,21 +214,21 @@ header .fullheight .hgroup p {
   margin: 0 auto;
   text-shadow: #000000 0 0 40px;
 }
-/* line 45, ../../../components/sass/_mixins.scss */
+/* line 43, ../../../components/sass/_mixins.scss */
 header .fullheight .hgroup p:before, header .fullheight .hgroup p:after {
   content: '';
   display: table;
 }
-/* line 50, ../../../components/sass/_mixins.scss */
+/* line 48, ../../../components/sass/_mixins.scss */
 header .fullheight .hgroup p:after {
   clear: both;
 }
-/* line 52, ../../../components/sass/modules/_intro.scss */
+/* line 51, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p img {
   max-width: 55px;
 }
 @media (min-width: 960px) {
-  /* line 43, ../../../components/sass/modules/_intro.scss */
+  /* line 42, ../../../components/sass/modules/_intro.scss */
   header .fullheight .hgroup p {
     width: 70%;
     font-size: 1.3em;
@@ -251,12 +246,12 @@ header #nav {
   width: 100%;
   z-index: 100;
 }
-/* line 45, ../../../components/sass/_mixins.scss */
+/* line 43, ../../../components/sass/_mixins.scss */
 header #nav:before, header #nav:after {
   content: '';
   display: table;
 }
-/* line 50, ../../../components/sass/_mixins.scss */
+/* line 48, ../../../components/sass/_mixins.scss */
 header #nav:after {
   clear: both;
 }
@@ -454,7 +449,6 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  max-width: 2000px;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -462,12 +456,12 @@ header #nav .navbar ul li a.active {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 45, ../../../components/sass/_mixins.scss */
+/* line 43, ../../../components/sass/_mixins.scss */
 #theproblem section.twocharts:before, #theproblem section.twocharts:after {
   content: '';
   display: table;
 }
-/* line 50, ../../../components/sass/_mixins.scss */
+/* line 48, ../../../components/sass/_mixins.scss */
 #theproblem section.twocharts:after {
   clear: both;
 }
@@ -504,12 +498,12 @@ header #nav .navbar ul li a.active {
   padding: 5px 0;
   line-height: 110%;
 }
-/* line 45, ../../../components/sass/_mixins.scss */
+/* line 43, ../../../components/sass/_mixins.scss */
 #theproblem section.onechart:before, #theproblem section.onechart:after {
   content: '';
   display: table;
 }
-/* line 50, ../../../components/sass/_mixins.scss */
+/* line 48, ../../../components/sass/_mixins.scss */
 #theproblem section.onechart:after {
   clear: both;
 }
