@@ -4,7 +4,7 @@
   "description": "A website that uses single page responsive CSS with Sass, Compass, Susy 2, etc",
   "repository": {
     "type": "git",
-    "url": "https://github.com/planetoftheweb/responsive.git"
+    "url": "https://github.com/CalebEverett/elevate"
   },
   "author": "Ray Villalobos",
   "devDependencies": {
