@@ -164,6 +164,14 @@ $(document).ready(function(){
   });
 });
 
+//play audio
+$(document).ready(function(){
+  var obama = $('#obama');
+  $("#downarrow").click(function(){
+    obama.get(0).play();
+  });
+});
+
 var chartheight = 400;
 var legendFontSize = 14;
 
