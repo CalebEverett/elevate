@@ -1,11 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px|Roboto:400,300);
 
 @include border-box-sizing; //uses border box sizing like the old IE
 
 $susy: (
   columns: 12,
   container: 60em,
-  gutters: 1/4,
   gutter-position: inside
 );
 
@@ -16,10 +15,10 @@ $wide: 1200px;
 
 
 //Add Color Palette
-$blue       : #063642;
+$blue       : #1270C8;
 $green      : #45B29D;
 $yellow     : #EFC94C;
-$orange     : #E27A3F;
+$orange     : #F69627;
 $red        : #DF4848;
 $pink       : #CD0069;
 $purple     : #6C71C4;
@@ -30,19 +29,22 @@ $backgroundColor    : $light;
 $typeDefault        : $dark;
 $navBackground      : $blue;
 $navForeground      : $light;
-$navHover           : $yellow;
-$navBrandBg         : $red;
+$navHover           : $orange;
+$navBrandBg         : $orange;
 $headersubbg        : $dark;
 
-//Font variables
-$fontfamily       : 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//Font variables 'Exo 2', 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fontfamily     	: 'Roboto', sans-serif;
+$headfontfamily		: 'Slabo 27px', serif;
 
-$thin     : 200;
+$thin     : 300;
 $normal   : 400;
 $bold     : 600;
 $heavy    : 800;
 
-$headFont   : $thin 1.5em/1.5em $fontfamily;
-$mainFont   : $thin 1em/1.5em $fontfamily;
+$headFont2  : $thin 1.5em/1.5em $fontfamily;
+$headFont  :  $normal 1em/1.5em $headfontfamily;
+$mainFont   : $normal 1.0em/1.5em $fontfamily;
 $headColor  : lighten($blue, 20);
+$headColor2 : $orange;
 

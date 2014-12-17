@@ -1,5 +1,5 @@
 $(function() {
-  var topoffset = 43;
+  var topoffset = 44;
 
   var isTouch = 'ontouchstart' in document.documentElement;
 
@@ -12,7 +12,6 @@ $(function() {
     var wheight = $(window).height(); //get height of the window
     $('.fullheight').css('height', wheight);
   }) //on resize
-
 
 // Animated Scrolling
   $('a[href*=#]:not([href=#])').click(function() {
@@ -30,38 +29,35 @@ $(function() {
 
   //highlight navigation
   $(window).scroll(function() {
-    var windowpos = $(window).scrollTop() + topoffset;
+    var windowpos = $(window).scrollTop() + topoffset + 1;
     $('nav li a').removeClass('active');
 
-    if (windowpos > $('#hotelinfo').offset().top) {
+    if (windowpos > $('#theproblem').offset().top) {
       $('nav li a').removeClass('active');
-      $('a[href$="#hotelinfo"]').addClass('active');
+      $('a[href$="#theproblem"]').addClass('active');
     } //windowpos
 
-    if (windowpos > $('#rooms').offset().top) {
+    if (windowpos > $('#thesolution').offset().top) {
       $('nav li a').removeClass('active');
-      $('a[href$="#rooms"]').addClass('active');
+      $('a[href$="#thesolution"]').addClass('active');
     } //windowpos
 
-    if (windowpos > $('#dining').offset().top) {
+    if (windowpos > $('#theplan').offset().top) {
       $('nav li a').removeClass('active');
-      $('a[href$="#dining"]').addClass('active');
+      $('a[href$="#theplan"]').addClass('active');
     } //windowpos
 
-    if (windowpos > $('#events').offset().top) {
+    if (windowpos > $('#leadership').offset().top) {
       $('nav li a').removeClass('active');
-      $('a[href$="#events"]').addClass('active');
+      $('a[href$="#leadership"]').addClass('active');
     } //windowpos
 
-    if (windowpos > $('#attractions').offset().top) {
+    if (windowpos > $('#references').offset().top) {
       $('nav li a').removeClass('active');
-      $('a[href$="#attractions"]').addClass('active');
+      $('a[href$="#references"]').addClass('active');
     } //windowpos
 
   }); //window scroll
-
-
-
 
   //set up ScrollMagic
   var controller = new ScrollMagic({
@@ -77,108 +73,70 @@ $(function() {
 
 
   if(!isTouch) {
-    //room animations
-    var roomOrigin = {
-      bottom: -700,
-      opacity: 0,
-      scale: 0
-    }
+    
 
-    var roomDest = {
-      repeat: 1,
-      yoyo: true,
-      bottom: 0,
-      opacity: 1,
-      scale: 1,
-      ease: Back.easeOut
-    }
-
-    var roomtween = TweenMax.staggerFromTo(
-      "#westminster .content",
-      1, roomOrigin, roomDest);
-
-    var pin = new ScrollScene({
-      triggerElement: '#westminster',
-      offset: -topoffset,
-      duration: 500
-    }).setPin('#westminster')
-      .setTween(roomtween)
-      .addTo(controller)
-
-
-    var roomtween = TweenMax.staggerFromTo(
-      "#oxford .content",
-      1, roomOrigin, roomDest);
-
-    var pin = new ScrollScene({
-      triggerElement: '#oxford',
-      offset: -topoffset,
-      duration: 500
-    }).setPin('#oxford')
-      .setTween(roomtween)
-      .addTo(controller)
-
-    var roomtween = TweenMax.staggerFromTo(
-      "#victoria .content",
-      1, roomOrigin, roomDest);
-
-    var pin = new ScrollScene({
-      triggerElement: '#victoria',
-      offset: -topoffset,
-      duration: 500
-    }).setPin('#victoria')
-      .setTween(roomtween)
-      .addTo(controller)
-
-    var roomtween = TweenMax.staggerFromTo(
-      "#manchester .content",
-      1, roomOrigin, roomDest);
-
-    var pin = new ScrollScene({
-      triggerElement: '#manchester',
-      offset: -topoffset,
-      duration: 500
-    }).setPin('#manchester')
-      .setTween(roomtween)
-      .addTo(controller)
-
-    var roomtween = TweenMax.staggerFromTo(
-      "#piccadilly .content",
-      1, roomOrigin, roomDest);
-
-    var pin = new ScrollScene({
-      triggerElement: '#piccadilly',
-      offset: -topoffset,
-      duration: 500
-    }).setPin('#piccadilly')
-      .setTween(roomtween)
-      .addTo(controller)
-
-
-    var roomtween = TweenMax.staggerFromTo(
-      "#cambridge .content",
-      1, roomOrigin, roomDest);
-
-    var pin = new ScrollScene({
-      triggerElement: '#cambridge',
-      offset: -topoffset,
-      duration: 500
-    }).setPin('#cambridge')
-      .setTween(roomtween)
-      .addTo(controller)
+   
 
   } //not a touch device
 
 
-  //atractions animation
-  var attractionstween = TweenMax.staggerFromTo('#attractions article', 1, { opacity: 0, scale: 0 },
-      {delay: 1, opacity: 1, scale: 1,
-        ease: Back.easeOut});
 
 
-  var scene = new ScrollScene({
-    triggerElement: '#attractions',
-    offset: -topoffset
-  }).setTween(attractionstween)
-    .addTo(controller);
 }); //on load
+
+//display solution lists
+
+$(document).ready(function(){
+  $("#toggleafford").click(function(){
+    $("#affordlist").toggle("slow");
+    if (document.getElementById("toggleafford").innerHTML == "Less") {
+        document.getElementById("toggleafford").innerHTML = "More...";
+    } else {
+      document.getElementById("toggleafford").innerHTML = "Less";
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#togglestructure").click(function(){
+    $("#structurelist").toggle("slow");
+    if (document.getElementById("togglestructure").innerHTML == "Less") {
+        document.getElementById("togglestructure").innerHTML = "More...";
+    } else {
+      document.getElementById("togglestructure").innerHTML = "Less";
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#togglecurriculum").click(function(){
+    $("#curriculumlist").toggle("slow");
+    if (document.getElementById("togglecurriculum").innerHTML == "Less") {
+        document.getElementById("togglecurriculum").innerHTML = "More...";
+    } else {
+      document.getElementById("togglecurriculum").innerHTML = "Less";
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#toggleinstruction").click(function(){
+    $("#instructionlist").toggle("slow");
+    if (document.getElementById("toggleinstruction").innerHTML == "Less") {
+        document.getElementById("toggleinstruction").innerHTML = "More...";
+    } else {
+      document.getElementById("toggleinstruction").innerHTML = "Less";
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#toggleservices").click(function(){
+    $("#serviceslist").toggle("slow");
+    if (document.getElementById("toggleservices").innerHTML == "Less") {
+        document.getElementById("toggleservices").innerHTML = "More...";
+    } else {
+      document.getElementById("toggleservices").innerHTML = "Less";
+    }
+  });
+});

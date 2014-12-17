@@ -4,22 +4,24 @@ body {
   height: 100%;
 }
 
-.scene {
-  position: relative;
-  padding: 20px 0;
+#wrapper {
 
   article {
-    @include container(95%);
+    @include container;
+    position: relative;
+    padding: 0px 10px;
+
+    ul {
+      li {
+          font-weight: $thin;
+          list-style: square;
+            margin-left: 5%;
+            line-height: 125%;
+            margin-bottom: 5px;
+            font-size: 135%;
+        } //li
+    } //ul
+
   } //article
-
-  @include breakpoint($wide) {
-    padding: 40px 0;
-  } //breakpoint
-
-  @include breakpoint($medium) {
-    article {
-      @include container;
-    } //article
-  } // breakpoint
-} //scene
+}
 

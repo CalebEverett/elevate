@@ -4,10 +4,22 @@ body {
   color: $typeDefault;
 }
 
-#{headings()} {
+h1 {
+ font: $headFont;
+ color: $headColor2;
+ font-size: 3em;
+ font-weight: $thin;
+}
+
+h2 {
+ font: $headFont2;
+ color: $headColor;
+ font-size: 1.8em;
+}
+
+#{headings(3,4)} {
  font: $headFont;
  color: $headColor;
- font-weight: $bold;
 }
 
 strong {
@@ -17,4 +29,17 @@ strong {
 p {
   font-weight: $thin;
   padding-bottom: 10px;
+  line-height: 150%;
+  font-size: 150%;
+}
+
+sup {
+  font-size: 60%;
+  vertical-align: top;
+  line-height: 150%;
+}
+
+.chartnote {
+  font-size: 90%;
+  padding: 10px 25px;
 }

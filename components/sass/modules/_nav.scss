@@ -7,23 +7,21 @@ header #nav {
   .navbar {
     @include container;
     .brand {
-      @include span(4);
+      @include span(3);
       float: left;
-      font-weight: $bold;
-      font-family: $headFont;
       text-align: center;
-      text-transform: uppercase;
       background: $navBrandBg;
       a {
         color: $navForeground;
+        font-family: $headfontfamily;
         text-decoration: none;
         text-align: center;
         display: inline-block;
         padding: 10px;
-        font-size: 1.5em;
+        font-size: 2.5em;
 
         @include breakpoint(max-width $small) {
-          font-size: 1.2em;
+          font-size: 1.5em;
           span {display: none;}
         }
       } //a
@@ -46,15 +44,15 @@ header #nav {
           background-repeat: no-repeat;
           background-position: 2px;
 
-          &.info { background-image: url('../images/icons/info.png');}
-          &.rooms { background-image: url('../images/icons/rooms.png');}
-          &.dining { background-image: url('../images/icons/dining.png');}
-          &.events { background-image: url('../images/icons/events.png');}
-          &.attractions { background-image: url('../images/icons/attractions.png');}
+          &.problem { background-image: url('../images/icons/warning.png');}
+          &.solution { background-image: url('../images/icons/bulb.png');}
+          &.plan { background-image: url('../images/icons/plan.png');}
+          &.team { background-image: url('../images/icons/team.png');}
+          &.references { background-image: url('../images/icons/info.png');}
 
           &:hover {
             background-color: $navHover;
-            color: $blue;
+          //  color: $blue;
           } //hover
 
           @include breakpoint(0 $small) {
@@ -73,7 +71,7 @@ header #nav {
           } //breakpoint
 
           &.active {
-            background-color: $red;
+            background-color: $orange;
             color: $light;
           }
         } //a

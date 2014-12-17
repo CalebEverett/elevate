@@ -2,212 +2,239 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Landon Hotel</title>
+  <title>Elevate</title>
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
   <header id="intro">
     <article class="fullheight">
-      <div class="hgroup">
-        <h1>Landon Hotel</h1>
-        <h2>West London</h2>
-        <p><a href="#welcome"><img src="images/misc/arrow.png" alt="down arrow"></a></p>
+       <div class="hgroup">
+         <h2>“And at the heart of the American ideal is this sense that we’re in it together, that nobody is guaranteed success but everybody has got access to the possibilities of success<span>, and that we are willing to work not just to make sure our own children have pathways to success but that everybody does; that at some level, everybody is our kid, everybody is our responsibility.</span>”</h2>
+         <p>--President Barack Obama, College Opportunity Summit, December 4, 2014</p>
+         <p><a href="#welcome"><img src="images/misc/orangearrow.png" alt="down arrow"></a></p>
+         <p><audio controls>
+        <source src="images\audio\ObamaCollegeOpportunity.mp3" type="audio/mpeg">
+        <source src="images\audio\ObamaCollegeOpportunity.ogg" type="audio/ogg">
+       </audio>  </p>
       </div>
     </article>
-
     <nav id="nav">
       <div class="navbar">
-        <div class="brand"><a href="#welcome">Landon <span>Hotel</span></a></div>
+        <div class="brand"><a href="#welcome">Elevate</a></div>
         <ul>
-          <li><a class="icon info" href="#hotelinfo"><span>info</span></a></li>
-          <li><a class="icon rooms" href="#rooms"><span>rooms</span></a></li>
-          <li><a class="icon dining" href="#dining"><span>dining</span></a></li>
-          <li><a class="icon events" href="#events"><span>events</span></a></li>
-          <li><a class="icon attractions" href="#attractions"><span>attractions</span></a></li>
+          <li><a class="icon problem" href="#theproblem"><span>problem</span></a></li>
+          <li><a class="icon solution" href="#thesolution"><span>solution</span></a></li>
+          <li><a class="icon plan" href="#theplan"><span>plan</span></a></li>
+          <li><a class="icon team" href="#leadership"><span>leadership</span></a></li>
+          <li><a class="icon references" href="#references"><span>references</span></a></li>
         </ul>
       </div><!-- navbar -->
     </nav>
   </header>
-<main id="wrapper">
-  <div class="scene" id="welcome">
-    <article class="content">
-      <div class="gallery">
-        <img src="images/hotel/intro_room.jpg" alt="Intro Gallery Room Sample Pictures">
-        <img src="images/hotel/intro_pool.jpg" alt="Intro Gallery Pool Sample Pictures">
-        <img src="images/hotel/intro_dining.jpg" alt="Intro Gallery Dining Sample Pictures">
-        <img src="images/hotel/intro_attractions.jpg" alt="Intro Gallery Attractions Sample Pictures">
-        <img class="hidesm" src="images/hotel/intro_wedding.jpg" alt="Intro Gallery Dining Sample Pictures">
+  <main id="wrapper">
+    <div class="scene fullheight" id="welcome">
+      <div>
+        <h1>Elevate</h1>
+        <h2>World class career education for high school graduates unprepared for college</h2>
+        <p><a href="#theproblem"><img src="images/misc/orangearrow.png" alt="down arrow"></a></p>
       </div>
-      <h1>Welcome to the Landon&nbsp;Hotel</h1>
-      <p>The original Landon perseveres after 50 years in the heart of West London. The West End neighborhood has something for everyone&mdash;from theater to dining to historic sights. And the not-to-miss Rooftop Cafe is a great place for travelers and locals to engage over drinks, food, and good&nbsp;conversation.</p>
-    </article>
-  </div><!-- welcome -->
-  <div class="scene" id="hotelinfo">
-    <article class="heading">
-      <h1>Essential Info</h1>
-    </article>
-    <article id="usefulinfo">
-      <section id="arrivalinfo">
-        <h2>Arrival Information</h2>
-        <ul>
-          <li><strong>Check-in:</strong> 3:00 PM</li>
-          <li><strong>Check-out:</strong> 11:00 AM</li>
-          <li><strong>Parking:</strong> Self-parking in the underground garage is ￡15 per day and valet-parking is ￡50 per day.</li>
-          <li><strong>Airport Shuttle:</strong> Our complimentary airport shuttles leave every hour on the hour, and make trips to Heathrow and Gatwick airports.</li>
-          <li><strong>Trains:</strong> The nearest Underground station is at Leicester Square.</li>
-          <li><strong>Pet Policy:</strong> Pets of all sizes and types are allowed in designated pet rooms, and the specified common areas. Service animals are allowed everywhere.</li>
-        </ul>
+    </div>
+  <div class="scene" id="theproblem">
+      <article>
+      <h1>The Problem</h1>
+      <p>One of our strongest national values is that everyone, no matter where they live, how old they are or what the color of their skin is, should have the opportunity to support themselves and improve their lives.<p>
+      <p>The key to getting ahead in life is higher education; the link between higher education and higher income is well established. Most jobs today require education beyond high school. 100% of the growth in these jobs projected through 2020 is expected to be in those requiring education beyond high school.<a href='#references'><sup id="one">1</sup></a></p>
+      <section class="twocharts">
+        <section class="chart">
+        <h2 class="charttitle">Median Annual Earnings by Educational Attainment</h2>
+          <div id="income_chart">
+          </div>
+          <p class="chartnote">Note: Data are for persons age 25 and over. Earnings are for full-time wage and salary workers. <a href="http://www.bls.gov/emp/ep_table_001.htm">Source:</a> Current Population Survey, U.S. Department of Labor, U.S. Bureau of Labor Statistics.</p>
+        </section>
+        <section class="chart">
+          <h2 class="charttitle">Educational Requirements for Jobs in the U.S. Requiring a High School Diploma or Higher Degree</h2>
+          <div id="jobs_chart">
+          </div>
+          <p class="chartnote"><a href="https://georgetown.app.box.com/s/tll0zkxt0puz45hu21g6">Source</a>: Recovery: Job Growth and Education Requirements Through 2020, June 2013, Georgetown, University Center on Education and Workforce.<p>
+        </section>
       </section>
-      <section class="checklist" id="services">
-        <h2>Services and Amenities</h2>
-        <p>Our services and amenities are designed to make your travel easy, your stay comfortable, and your experience one-of-a-kind.</p>
-        <ul>
-          <li>Indoor pool</li>
-          <li>24-hour fitness center</li>
-          <li>Massage therapy</li>
-          <li>Full service spa</li>
-          <li>In-room jacuzzi tubs</li>
-          <li>Rooftop café  &amp; smoothie bar</li>
-          <li>Coffee bar  &amp; pastry shop</li>
-          <li>Traditional continental breakfast</li>
-          <li>24-hour concierge service</li>
-          <li>Business center</li>
-          <li>Complimentary wireless service</li>
-          <li>Laundry &amp; dry cleaning service</li>
-          <li>Daily paper</li>
-          <li>Certified "green" hotel</li>
-          <li>Pet-friendly rooms  &amp; common areas</li>
-        </ul>
+      <p>Unfortunately, our education system is leaving behind millions of people; millions of people who in many respects, have the most to gain from additional education. We are leaving behind the people who are trying to make it up the very first rung of the life improvement ladder, going from not making it, to being able to pay the bills, from doing menial labor, to having a decent job, from wanting more for their kids, to being proud of the example they are setting.</p>
+      <p>The problem begins in our K-12 system where <strong>as many as two million young adults graduate high school each year unprepared to succeed in college.</strong>  63% of high school graduates in 2014 were not prepared to read at the college level and the problem is even worse among people of color.<a href='#references'><sup id="two">2</sup></a> In 2014 less than 30% of African-American and less than 20% of Hispanic high school graduates were prepared for college level reading and math.</p>
+      <section class="twocharts">
+        <section class="chart">
+        <h2 class="charttitle">2012 High School Graduates by Race</h2>
+        <h3 class="chartsubtitle">Total=3,203, in Thousands</h3>
+          <div id="hsgrads_chart">  
+          </div>
+          <p class="chartnote"><a href="http://nces.ed.gov/programs/digest/d13/tables/dt13_504.10.asp">Source</a>: U.S. Department of Commerce, Census Bureau, Current Population Survey (CPS), October 2012 prepared June 2013.</p>
+        </section>
+        <section class="chart">
+        <h2 class="charttitle">2014 College Readiness by Race</h2>
+        <h3 class="chartsubtitle">Based on ACT Scores</h3>
+            <div id="ready_chart">
+            </div>
+          <p class="chartnote"><a href="http://www.act.org/research/policymakers/cccr14/pdf/CCCR14-NationalReadinessRpt.pdf">Source</a>: The Condition of College and Career Readiness 2014. ACT.<p>
+        </section>
       </section>
-      <section class="checklist" id="accessibility">
-        <h2>Accessibility</h2>
-        <p>We're committed to maintaining the same quality of service for every individual. We offer the following facilities for those with special needs:</p>
-        <ul>
-          <li>Grab bars on tub walls</li>
-          <li>Shower chairs</li>
-          <li>Hand held shower sprayers</li>
-          <li>Higher toilets &amp; toilet modifiers</li>
-          <li>Lower sink faucet handles</li>
-          <li>Wheelchair clearance under sinks &amp; vanity</li>
-          <li>Lower racks in closet</li>
-          <li>TDD machines</li>
-          <li>Telephone light signalers  &amp; smoke alarms</li>
-          <li>Telephone amplification handsets</li>
-          <li>Closed captioned television converters</li>
-          <li>Vibrating alarm clocks</li>
-          <li>Telephones with volume control</li>
-        </ul>
+      <p>A large portion of those enrolling in higher education do not complete their studies. 41 percent of those enrolling in a four-year college fail to obtain a Bachelor’s degree within six years.<a href='#references'><sup id="three">3</sup></a> For those who graduated high school unprepared for college, the results are dismal. Fully 67 percent of those enrolling in open admissions colleges fail to obtain a Bachelor’s degree within six years and <strong>over 80 percent of those enrolling in community colleges fail to obtain a degree within three years.</strong> Each year 1.7 million students begin college in remediation, including a majority of community college students — but <strong>only one in ten remedial students ever graduate.</strong><a href='#references'><sup id="four">4</sup></a></p>
+      <section class="onechart">
+        <section class="chart">
+        <h2 class="charttitle">College Completion Rates by Race and Institution</h2>
+          <div id="collegegrad_chart">
+          </div>
+          <p class="chartnote"><a href="http://nces.ed.gov/programs/digest/d13/tables/dt13_504.10.asp">Source</a>: U.S. Department of Education, National Center for Education Statistics, Integrated Postsecondary Education Data System (IPEDS), Fall 2001 and Spring 2002 through Spring 2013, Graduation Rates component, prepared January 2014.</p>
+        </section>
+      </section>
+      <p>The cost of leaving so many people behind is steep. A recent study commissioned by the White House Council on Community Solutions estimated the fiscal cost of the 6.7 million Americans ages 16-24 who are neither working nor attending school is $1.6 trillion over their lifetimes.<a href='#references'><sup id="five">5</sup></a> But the human cost is even greater - <strong>millions of hard working people with hopes, dreams, aspirations and families to support are systematically being denied the opportunity to get ahead in life.</strong></p>
+      </article>
+      <div class="fullheight" id="students">
+      </div>
+      <article>
+      <p>The reason these students fail is not for lack of motivation or willingness to work hard. <strong>Most of these students are extremely motivated.</strong> They have to provide for themselves. They want to provide opportunities for their children and set a good example. They are already working incredibly hard to survive.</p>
+      <p>Unfortunately, <strong>traditional higher education is not designed with these students in mind.</strong> It is, by definition, designed for those who are prepared for college. The model of selecting from among thousands of courses, learning by lecture and note-taking, multiple classes a day with limited opportunities for one-on-one interaction with instructors or counselors, spanning multiple years may work well for students who have already been successful academically, but empirically it is terrible for those who haven’t.</p>
+      <p>Vocational institutions incorporate many of the elements required to effectively serve this population. Unfortunately many of them, as the press has popularized in recent years, have been more focused on profitability than student outcomes, leaving students actually worse off, with significant debt and without improved career prospects.</p>
+      <p><strong>Without advancements in educational and career training alternatives, we will continue to deny millions of Americans the opportunity to improve their lives.</strong></p>
+      </article>
+  </div><!-- theproblem -->
+  <div class="scene" id="thesolution">
+    <article>
+    <h1>The Solution</h1>
+    <p>What people who have graduated from high school unprepared for college need to succeed in higher education, first and foremost, is education focused on solving their most pressing issue, their financial survival. They are struggling to pay the bills so <strong>these students need career focused education that enables them to begin decent jobs as quickly as possible.</strong> They need a structured, directed approach to their education with lots of opportunities to learn by doing and to improve their basic employability skills. And most importantly <strong>they need a lot of support and personal interaction</strong>, especially early on.<a href='#references'><sup id="six">6</sup></a><sup>,</sup><a href='#references'><sup id="seven">7</sup></a></p>
+    <p>Elevate will develop a world class model of education designed specifically for high school graduates unprepared for college. Elevate will deliver <strong>affordable, highly-structured, career-focused</strong> education with a <strong>competency-based, technology-enabled</strong> curriculum taught by <strong>exceptional instructors</strong>. Complemented by intensive services and support, Elevate programs will empower its students to complete their first step in higher education and begin promising careers.</p>
+    <section>
+      <h2>Affordable</h2>
+      <p>Elevate programs will be affordable because they will be short, leverage technology to both improve instruction and reduce administrative costs, and utilize federal student aid and other grants as funding sources.<button id="toggleafford">More...</button></p>
+      <ul id="affordlist">
+        <li>Elevate will be delivered at a cost of $10,000 per student for the average program duration of six months.</li>
+        <li>As an accredited institution of higher education, Elevate will utilize Pell grants to fund up to half of each student’s tuition.</li>
+        <li>Elevate will utilize other grants and donations, including those available via the Workforce Investment Act, as additional funding sources.</li>
+        <li>Students will be responsible for a small portion of their tuition via long-term, low interest rate loans.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Highly Structured, Career-Focused</h2>
+      <p>Elevate programs will be career focused and highly structured in order to get students to work as quickly as possible and to keep them focused on learning and completing their programs.<button id="togglestructure">More...</button></p>
+      <ul id="structurelist">
+        <li>Programs will be based on proven employer demand in promising careers.
+        <li>Learning objectives will be tightly aligned with requirements for career success.
+        <li>Intensive five hours a day, five days a week for four to eight months.
+        <li>One month workplace learning experience in every program.
+        <li>We will recruit an employer advisory board to provide regular feedback on our programs to ensure they stay up to date.
+        <li>Employers will participate in classes frequently as guest lecturers to help make the simulated work environment even more real, keep students connected to their goals while introducing employers to our students as their potential new hires.</li>
+        <li>Programs will include instruction in learning, basic math and english, employability, information, media and technology, critical thinking, problem solving, communication, time management and collaboration skills.</li>
+        <li>Programs will include instruction on how to find a job and succeed in the workplace, including how to identify job opportunities, networking, interview skills and being a valuable employee.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Competency Based, Technology Enabled Curriculum</h2>
+      <p>Elevate programs will be competency-based and technology enabled in order to increase instructional effectiveness, facilitate student engagement and reduce program cost.<button id="togglecurriculum">More...</button></p>
+      <ul id="curriculumlist">
+        <li>Programs will make extensive use of hands-on, project based learning and authentic assessments, simulating workplace requirements.</li>
+        <li>Individual student achievement will guide the assignment of learning activities and the pace of advancement.</li>
+        <li>Every student will be issued a personal computing device for use in and out of school.</li>
+        <li>Curriculum will be maintained in and delivered via modern a learning management system to enable frequent, detailed analysis of student achievement and facilitate assignment of relevant learning activities.</li>
+        <li>Extensive use of “flipped” classrooms, leveraging the widespread availability of high quality video and online curricular assets, learning management system and student computing devices to enable students to learn foundational skills and knowledge independently in order to focus instructor time on higher order learning objectives.</li>
+        <li>Socially sharable digital badges will be awarded for demonstrating mastery of learning objectives. An online portfolio of digital badges and related work product will be maintained for each student to celebrate achievement and use in job searches.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Exceptional Instruction</h2>
+      <p>Instructors have the biggest impact on students’ success, as a result of the instruction they provide, but also as a result of the relationships they develop with students and the individual attention they pay them.<button id="toggleinstruction">More...</button></p>
+      <ul id="instructionlist">
+        <li>We will develop a comprehensive system to recruit, develop, motivate and support instructors to deliver outstanding instruction and provide the support and interaction critical to our students success. Because of our approach and focus, we will be able to attract high caliber working professionals and educators passionate about improving students lives.</li>
+        <li>We will keep our classes small (less than 15:1) and utilize a variety of instructional methods, including group projects, in-person and video lectures, one-on-one tutoring, hands-on exercises, and online interactive activities.</li>
+        <li>Individual student achievement will be analyzed frequently in order to assign the learning activities most needed by individual students.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Intensive Services and Support</h2>
+      <p>Services, support and personal relationships are critical to Elevate students’ success in school and in beginning their careers.<button id="toggleservices">More...</button></p>
+      <ul id="serviceslist">
+        <li>We will have trained personnel on staff to empower students to remove barriers to theirs success in school and beyond, including professional appearance, child care, transportation, healthcare and housing among others.</li>
+        <li>We will have trained career services personnel on staff to provide intensive individualized placement assistance, including job development and coaching.</li>
+        <li>We will establish a mentoring program with working professionals for students.</li>
+      </ul>
+    </section>
+  </article>
+  </div>
+  <div class="scene" id="theplan">
+    <article>
+    <h1>The Plan</h1>
+    <p>We plan to establish the Elevate model over the next three years by building a three campus institution that graduates over 1,200 students annually with an <strong>initial investment of $6.0 million.</strong> By 2025 Elevate will be a leading model of higher education for high school graduates unprepared for college in the U.S., graduating over 10,000 students into promising careers and continued higher education annually.</p>
+    <p>In <strong>year one we will establish an institutional management team</strong> and complete the development of our educational model utilizing the assets of an existing career college.  We will then implement the new educational model at the existing career college’s campus in Santa Ana.</p>
+    <p>In <strong>years two and three we will</strong> continue to refine the model, introduce new programs and <strong>establish our second and third campuses</strong>.</p>
+    <p>By our third year of operations we will have firmly established Elevate as a highly effective model for empowering high school graduates unprepared for college to complete their first step in higher education and begin promising careers. We will then open new campuses more rapidly and further expand our reach by enabling other organizations to adopt the Elevate model.</p>
+    <section>
+      <h2>Expand Institutional Management Team</h2>
+      <p>We are going to build an amazing team of world class education innovators with deep experience, passionate about building an organization that improves tens of thousands of lives every year and makes a lasting impact on the national higher education landscape. Much like New Leaders for New Schools, Education Pioneers and the Broad Center attract some of our nation's leading education innovators, we are looking for action oriented professionals who are able to push the envelope in implementing innovative approaches designed for non-college ready high school graduates.  We will recruit from the leading education schools across the country, charter schools and other innovative education focused non-profits.</p>
+      <p>We anticipate incurring expenses of $1.6 million in our first year of operations to establish our core institutional management team.</p>
+    </section>
+    <section>
+      <h2>Develop the Educational Model</h2>
+      <p>We will complete the development of the Elevate education model during our first six months of operations. We plan to convert five existing career college programs into Elevate programs, develop the first part of the Elevate instructor professional development curriculum and implement key systems improvements.</p>
+      <p>We anticipate incurring expenses of $500,000 to complete the development of the Elevate model.</p>
+    </section>
+    <section>
+      <h2>Implement the Elevate Model in Santa Ana</h2>
+      <p>Within six months of securing funding, we will be ready to begin implementing the Elevate model in Santa Ana. In addition to the conversion of the existing programs and the implementation of the new instructor professional development program, we plan to upgrade the facilities in Santa Ana and launch a new outreach and awareness campaign.</p>
+      <p>We anticipate incurring expenses of $278,000 to implement the Elevate model in Santa Ana.</p>
+    </section>
+    <section>
+      <h2>Open Additional Campuses</h2>
+      <p>We plan to launch our second campus immediately following the introduction of the Elevate model in Santa Ana, approximately eight months after securing funding.  We have modeled a typical new campus based on a target enrollment of 300 students.  A new Elevate campus can be launched for a total investment of $2.0 million, be self-funding within twelve months and graduate over 500 students annually beginning in its second year of operations. We plan to launch our third campus twelve months after the launch of our second campus.</p>
+    </section>
+  </article>
+  <div class="scene" id="leadership">
+    <article>
+    <h1>Leadership</h1>
+      <section>
+        <h2>Caleb Everett</h2>
+        <p><a href="mailto:caleb@careercalifornia.edu">caleb@careercalifornia.edu</a></p>
+        <p>Caleb is Chief Executive Officer of Career College of California, based in Santa Ana with a mission of empowering students to begin promising careers and improve their lives.  Under Caleb’s leadership since 2010 Career College of California has helped over 500 students begin promising careers in the healthcare, legal and business fields.  Prior to Career College of California, Caleb worked in the private equity industry for over ten years as Managing Director of Friedman, Fleischer & Lowe and as an Analyst with the Blackstone Group.  Caleb began his career with Morgan Stanley as a Financial Analyst in the Mergers and Acquisitions department.</p>
+        <p>Caleb received a Bachelor of Science in Economics, magna cum laude, from the Wharton School of the University of Pennsylvania.  He received an Associate of Science in Business Administration, summa cum laude, from Northern Virginia Community College in Annandale, Virginia.</p>
+        <p>Caleb is currently a Board Member of the Santa Ana Workforce Investment Board.  Caleb previously served on the boards of directors of Rising Sun Energy Center, a non-profit national leader in curriculum, training and workforce development in the energy efficiency sector, Halstrom Academy, a private high school with multiple campuses in Southern California based on a one student to one teacher instructional delivery model, California Association of Private Postsecondary Schools, and several other corporations.</p>
+      </section>
+        <h2>Niko Everett</h2>
+        <p><a href="mailto:niko@careercalifornia.edu">niko@careercalifornia.edu</a></p>
+        <p>Niko is a Senior Director of the The Broad Academy at the Broad Center where she supports educational leaders to pioneer breakthrough initiatives that will transform America’s public school system. From 2010-2013 Niko helped manage and grow Career College of California and built key community partnerships with local non-profits, high schools and Workforce Investment Boards. From 2001 to 2009 she founded and led Girls For A Change, a non-profit organization empowering girls to create social change. Niko took Girls For A Change from proof of concept to scale as a national organization with investors and corporate partners that include Sephora Inc, Bank of America, Intel and American Express. In addition, Niko raised growth capital for national expansion from the venture philanthropy community, including Draper Richards, New Profit Inc. and Johnson Family Foundation. Previous to Girls for a Change, Niko co-founded Young Women Social Entrepreneurs, a non-profit executive membership organization promoting women with socially-conscious agendas into leadership.</p>
+        <p>Niko has been recognized by The Women's High Tech Coalition, Fast Company magazine’s Social Capitalist Awards and the Silicon Valley Leadership Group. She was named in The Silicon Valley Business Journal as one of the “40 Under 40” up and comers and as a Community Hero by NPR. Niko was selected by the US State Department to teach Social Entrepreneurship in Tajikistan.</p>
+        <p>Niko is a frequent speaker on topics from social entrepreneurship to self-worth. She was a Tedx speaker and has addressed audiences at Haas Business School, Stanford Graduate School of Business & The World Affairs Council among others. Niko’s work has been covered by Newsweek, The Washington Post and The San Jose Mercury News among others.</p>
+      </section>
+      </section>
+        <h2>Jane Leu</h2>
+        <p><a href="mailto:jane@smartergood.com">jane@smartergood.com</a></p>
+        <p>Jane is founder & CEO of Smarter Good, a global services firm for social sector organizations focused on systemic change. She is an Ashoka Fellow and an award winning and internationally recognized social entrepreneur with more than 20 years of experience in founding and leading numerous social enterprises.</p>
+        <p>As the Founder and CEO of Upwardly Global she worked to remove the barriers to full economic and workforce participation in the US for skilled immigrants from more than 105 countries. Building the organization from the ground up, Upwardly Global is now in four states and has served thousands of immigrant job seekers and increased the incomes of immigrant families by more than $100M.</p>
+        <p>Across her career Jane has been involved in applying business strategies and best practices to advance the nonprofit and start-up social sector field. She was the co-Founder of the Craigslist nonprofit venture forum that connected social entrepreneurs and venture philanthropists, and a member of the early team that developed the Hauser Research Center for Nonprofit Organizations at Harvard University's Kennedy School of Government. More recently, as the interim Executive Director for Ashoka U, she worked with universities to become leaders in social innovation education and to produce the next generation of leaders and changemakers for our sector.</p>
+        <p>Jane's contributions and leadership have been recognized by the John F. Kennedy New Frontier Award, the Rockefeller Foundation Next Generation Leadership program, Jefferson Award for Community Service, Draper Richards Foundation for Social Entrepreneurship and the Manhattan Institute Social Entrepreneur Award, among others. She holds a MA from Columbia University's School of International and Public Affairs and a BA from Tufts University. She lives in San Francisco, CA with her husband, Ted Levinson, a social finance professional.</p>
+      </section>      
+    </article>
+  </div>
+  <div class="scene" id="references">
+    <article>
+    <h1>References</h1>
+      <section>
+        <p><a href='#one'><sup>1</sup></a> Carnevale, Anthony P., Nicole Smith, Jeff Strohl. 2013. Recovery: Job Growth and Education Requirements through 2020. Washington, D.C. Georgetown Public Policy Institute, Center on Education and the Workforce. <a href="https://cew.georgetown.edu/recovery2020">https://cew.georgetown.edu/recovery2020</a></p>
+        <p><a href='#two'><sup>2</sup></a> The Condition of College & Career Readiness 2014. ACT. <a href="http://www.act.org/research/policymakers/cccr14/pdf/CCCR14-NationalReadinessRpt.pdf">http://www.act.org/research/policymakers/cccr14/pdf/CCCR14-NationalReadinessRpt.pdf</a></p>
+        <p><a href='#three'><sup>3</sup></a> U.S. Department of Education, National Center for Education Statistics, Integrated Postsecondary Education Data System (IPEDS), Fall 2001 and Spring 2002 through Spring 2013, Graduation Rates component,prepared January 2014.   <a href="http://nces.ed.gov/programs/digest/d13/tables/dt13_504.10.asp">http://nces.ed.gov/programs/digest/d13/tables/dt13_504.10.asp</a><a href="http://nces.ed.gov/programs/digest/d13/tables/dt13_326.10.asp"></a></p>
+        <p><a href='#four'><sup>4</sup></a> Four Year Myth. Make College Affordable. Restore the Promise of Graduating on Time. November 2014.. Indianapolis, IN. Complete College America. <a href="http://completecollege.org/wp-content/uploads/2014/11/4-Year-Myth.pdf"></a>http://completecollege.org/wp-content/uploads/2014/11/4-Year-Myth.pdf</p>
+        <p><a href='#five'><sup>5</sup></a> Clive R. Belfield, Henry M. Levin, and Rachel Rosen, “The Economic Value of Opportunity Youth” (Washington: Civic Enterprises, 2012). <a href="http://www.serve.gov/new-images/council/pdf/econ_value_opportunity_youth.pdf">http://www.serve.gov/new-images/council/pdf/econ_value_opportunity_youth.pdf</a></p>
+        <p><a href='#six'><sup>6</sup></a> Symonds, William C., Robert Schwartz, and Ronald F. Ferguson. 2011. Pathways to prosperity: Meeting the challenge of preparing young Americans for the 21st century. Cambridge, MA: Pathways to Prosperity Project, Harvard University Graduate School of Education. <a href="http://www.agi.harvard.edu/projects/Pathways_to_Prosperity_Feb2011.pdf">http://www.agi.harvard.edu/projects/Pathways_to_Prosperity_Feb2011.pdf</a></p>
+        <p><a href='#seven'><sup>7</sup></a> Mourshed, Mona, Diana Farrell, Dominic Barton. 2012. Education to Employment: Designing a System that Works. McKinsey Center for Government. <a href="http://mckinseyonsociety.com/downloads/reports/Education/Education-to-Employment_FINAL.pdf">http://mckinseyonsociety.com/downloads/reports/Education/Education-to-Employment_FINAL.pdf</a></p>
       </section>
     </article>
-    <article id="greenprogram">
-      <h2>Landon Green Program</h2>
-      <p><strong>The Landon Hotel - London</strong> was recently renovated, and we considered the impact on the earth the entire way. From green building materials, to solar power, to energy-friendly lighting and appliances throughout the hotel - we’re saving energy in every socket, outlet, and switch. We’ve also initiated a recycling and composting program that reduces the load to local landfills, while providing valuable raw material for use in new products, or in the case of compost, for use in local gardens and landscapes.</p>
-    </article>
-  </div><!-- hotelinfo -->
-  <div class="scene" id="rooms">
-    <header>
-      <h1>Guest Rooms</h1>
-      <p>Our guest rooms feature sumptuous classic furnishings that evoke visions of London’s rich and long-standing tradition of royalty. While our rooms are decked out in classic design, they each have a modern flair, and contain all the modern comforts expected in today’s luxury hotels. We’ve named our rooms for the notable public squares and circuses around which the West End is laid&nbsp;out.</p>
-    </header>
-    <article class="room fullheight" id="piccadilly">
-      <section class="content">
-        <h1>Piccadilly</h1>
-        <p>Designed to be our economy room, for those who will be spending more time seeing the sights, and less time hitting the hay. The Piccadilly room has a smaller footprint, but maintains the accommodations of some of our more deluxe rooms.</p>
-      </section>
-    </article>
-    <article class="room fullheight" id="cambridge">
-      <section class="content">
-        <h1>Cambridge</h1>
-        <p>This room features a king bed, with a Comfort-Plus mattress, covered in 400-thread Egyptian cotton sheets. The Cambridge room is decorated in tasteful and warm muted tones, that are soothing on the eyes and senses.</p>
-      </section>
-    </article>
-    <article class="room fullheight" id="westminster">
-      <section class="content">
-        <h1>Westminster</h1>
-        <p>This room is available with a king or two double beds, and is furnished with our Premiere London collection – the softest and most luxurious bed and bath linens.</p>
-      </section>
-    </article>
-    <article class="room fullheight" id="oxford">
-      <section class="content">
-        <h1>Oxford</h1>
-        <p>Our Oxford suites are some of the prettiest and most romantic rooms around and are perfect for honeymoons. All of these feature canopy beds, lots of windows, and spare no modern comfort or convenience, including a TLX media system.</p>
-      </section>
-    </article>
-    <article class="room fullheight" id="victoria">
-      <section class="content">
-        <h1>Victoria</h1>
-        <p>Traveling with the family? Our spacious Victoria suites, with breathtaking views of the city, are the perfect choice. These corner rooms are furnished with a king or two double beds, and have a sofa with a comfortable pullout bed.</p>
-      </section>
-    </article>
-    <article class="room fullheight" id="manchester">
-      <section class="content">
-        <h1>Manchester</h1>
-        <p>The Manchester Executive Suite, is popular with business travelers the world over. These two-room suites feature a king-size bed, living room with leather recliner, full-sized executive desk, and leather desk chair.</p>
-      </section>
-    </article>
-  </div><!-- rooms -->
-  <div class="scene" id="dining">
-    <article id="areadining">
-      <h1>Dining in the Area</h1>
-      <p>The West End is a foodie’s paradise, and the Landon Hotel is in the center of it all. With options for traditional English, Italian, Indian, American, Chinese, and French cuisines, all within two blocks of the hotel, and a variety of tasty culinary delights from many other countries, within a half-mile radius, the only trouble you’ll have is choosing! </p>
-    </article>
-    <article id="inhotel">
-      <section id="rooftopcafe">
-        <h2>Rooftop Caf&eacute;</h2>
-        <img src="images/hotel/dining_rooftop.jpg" alt="Dining">
-        <p>Landon Rooftop Caf&eacute; is the destination for five star dining. Our master chefs are trained to meet special dietary needs, and we offer a range of vegetarian/vegan, kosher, gluten, and dairy free selections to accommodate our guests. Whether you&rsquo;re in the mood for our award winning roast beef, fresh select salads, appetizing lunch entrees, or delectable desserts, we have you covered.</p>
-      </section>
-
-      <section id="smoothiebar">
-        <h2>Smoothie Bar</h2>
-        <img src="images/hotel/dining_smoothiebar.jpg" alt="Dining">
-        <p>The Rooftop Smoothie Bar gives you panoramic views of the city, where you can have one of our specialty smoothies while you wait for your table. Our top mixologists are constantly bringing new and unique offerings to our smoothie menu. We have a wide range of locally grown, fresh fruit and vegetable choices to make you custom blended drinks.  We also have seasonal selections that you won’t find anywhere else.</p>
-      </section>
-
-      <section id="coffeebar">
-        <h2>Breakfast &amp; Coffee Bar</h2>
-        <img src="images/hotel/dining_lattes.jpg" alt="Dining">
-        <p>Our traditional breakfast and coffee bar, located adjacent to our lounge, are the perfect way to start your morning. We offer a wide selection of seasonal fresh fruit, a variety of cereals, croissants, crusty sourdough bread, cook-to-order eggs and omelettes, fresh juice, coffee, and teas. Breakfast is served from 7:00 am to 10:00 am daily. Our coffee bar is open until 6:30 pm daily.</p>
-      </section>
-    </article><!-- inhotel -->
-    <article id="roomservice">
-      <h1>Room Service</h1>
-      <p>If you’d rather stay in your room and enjoy a quiet evening in, or a relaxing breakfast in bed, room service options are available for all of our dining choices.</p>
-    </article>
-  </div><!-- dining -->
-  <div class="scene" id="events">
-      <article class="event fullheight" id="businessmeetings">
-        <div class="content">
-          <h2>Business Meetings</h2>
-          <p>Our hotel boasts wireless Internet in every common room, and guest room, including the dining area and lobby. And, we have a state-of-the-art meeting room with video projectors, high definition video screens, and advanced sound technology.</p>
-        </div><!-- content -->
-      </article><!-- article -->
-      <article class="event fullheight" id="weddings">
-        <div class="content">
-          <h2>Weddings &amp; Social Events</h2>
-          <p> When you entrust us to handle your wedding, or other event, you’re putting your faith in our professional reputation – and that’s not a responsibility we take lightly. </p>
-        </div><!-- content -->
-      </article><!-- article -->
-  </div><!-- events -->
-  <div class="scene fullheight" id="attractions">
-    <article class="content">
-      <h1>Local Attractions</h1>
-        <p>Whether you’re a theater enthusiast, enjoy epic shopping, or love to stroll and people watch, London’s West End has an endless opportunity to partake. The heart of London’s "Theatreland" offering the best in drama, comedy, and musical productions.</p>
-    </article>
-  </div><!-- attractions -->
+    </div>
 </main>
 <footer class="scene">
   <article class="content">
     <div id="socialmedia">
-      <ul class="group">
-        <li><a href="https://twitter.com"><img class="icon" src="images/socialmedia/twitter.png" alt="icon for twitter" /></a></li>
-        <li><a href="http://www.facebook.com"><img class="icon" src="images/socialmedia/facebook.png" alt="icon for facebook" /></a></li>
-        <li><a href="http://www.youtube.com"><img class="icon" src="images/socialmedia/youtube.png" alt="icon for youtube" /></a></li>    
-      </ul>      
     </div>
   </article>
 </footer>
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 </body>
 </html>

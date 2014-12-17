@@ -2,6 +2,27 @@
   $image,
   $grDir: to bottom,
   $opStart: 0,
+  $opEnd: 1,
+  $bgPos: center center
+  ) {
+  background: linear-gradient(
+    $grDir,
+    rgba(0,0,0, $opStart),
+    rgba(0,0,0, $opEnd)
+  ),url($image);
+  background-repeat: no-repeat;
+  background-position: $bgPos; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 2000px;
+} //backImage
+
+@mixin backImage2(
+  $image,
+  $grDir: to bottom,
+  $opStart: 0,
   $opEnd: 0,
   $bgPos: center center
   ) {
@@ -16,7 +37,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-} //backImage
+  max-width: 2000px;
+} //backImage2
+
 
 @mixin clearfix {
   &:before,

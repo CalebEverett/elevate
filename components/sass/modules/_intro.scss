@@ -1,43 +1,64 @@
 header {
   .fullheight {
-    @include backImage('../images/hotel/splash_hotelphoto.jpg');
+    @include backImage('../images/school/graduation.jpg');
 
     @include display-flex();
-    @include align-items(center);
-    @include justify-content(center);
+    @include align-items(flex-end);
+    @include justify-content(flex-end);
 
     .hgroup {
-      padding: 100px 0;
+      padding: 25px 0;
 
       h1 {
         color: $light;
-        font-size: 5em;
-        font-weight: $heavy;
+        font-size: 3em;
         line-height: .8em;
-        @include text-shadow($dark 0 0 20px);
         text-align: center;
+
+
       } //h1
 
       h2 {
-        display: block;
         color: $light;
-        width: 60%;
-        max-width: 200px;
+        display: block;
+        font-family: $headfontfamily;
+        font-size: 1.5em;
+        line-height: 120%;
+        width: 90%;
         margin: 0 auto;
-        text-align: center;
-        border: 1px solid $light;
+        span {display: none;}
         margin-top: 15px;
         padding: 10px;
-        background: rgba($headersubbg, .5);
-        font-size: 1.3em;
+        text-align: center;
+        @include text-shadow($dark 0 0 40px);
+        
+        @include breakpoint($medium) {
+          width: 70%;
+          font-size: 2.2em;
+        }
+
+                
       } //h2
 
       p {
+        @include clearfix;
         text-align: center;
+        font-size: 1.1em;
+        color: $light;
+        padding: 5px 0;
+        width: 80%;
+        margin: 0 auto;
+        @include text-shadow($dark 0 0 40px);
         img {
-          padding-top: 50px;
-          max-width: 50px;
+             max-width: 55px;
         } //img
+
+        @include breakpoint($medium) {
+          width: 70%;
+          font-size: 1.3em;
+        }
+
+
       } //p
     } //hgroup
   } //fullheight

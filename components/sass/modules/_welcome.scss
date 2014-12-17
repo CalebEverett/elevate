@@ -1,39 +1,37 @@
 #welcome {
-  @include background-image(linear-gradient(top, $yellow, $orange));
+@include container;
 
-  article {
-    text-align: center;
-    @include container(70%);
-    @include breakpoint($small) {
-      @include container(33em);
-      padding: 60px 0;
-    } //breakpoint
-  } //article
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+
+#{headings()} {
+  text-align: center;
+}
 
   h1 {
-    font-weight: normal;
-    line-height: 100%;
-    color: darken($orange, 20);
-    padding: 10px 0;
+     font-size: 4em;
+     @include breakpoint($medium){
+     font-size: 7em;
+     }
   } //h1
 
-  .gallery {
-    @include clearfix;
-    img {
-      @include border-radius(20%);
-      display: none;
-
-      @include breakpoint($small) {
-        @include gallery(1 of 4);
-        display: inline;
-        &.hidesm { display: none; }
-      } //breakpoint
-
-      @include breakpoint($medium) {
-        @include gallery(1 of 5);
-        display: inline;
-        &.hidesm { display: inline; }
-      } //breakpoint
-    } //img
-  } //gallery
-} //welcome
+  h2 {
+    font-size: 1.8em;
+    @include breakpoint($medium){
+    font-size: 3em;
+     }
+  }
+  
+  p {
+    text-align: center;
+  img {
+        padding-top: 10x;
+        max-width: 55px;
+        @include breakpoint($medium){
+          padding-top: 30px;
+          max-width: 75px;
+          }
+        } //img
+  }//p
+}//welcome
