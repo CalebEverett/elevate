@@ -449,6 +449,7 @@ header #nav .navbar ul li a.active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 25px 0;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -466,7 +467,7 @@ header #nav .navbar ul li a.active {
   clear: both;
 }
 @media (min-width: 960px) {
-  /* line 15, ../../../components/sass/modules/_theproblem.scss */
+  /* line 19, ../../../components/sass/modules/_theproblem.scss */
   #theproblem section.twocharts section.chart {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -490,7 +491,7 @@ header #nav .navbar ul li a.active {
     clear: none;
   }
 }
-/* line 22, ../../../components/sass/modules/_theproblem.scss */
+/* line 26, ../../../components/sass/modules/_theproblem.scss */
 #theproblem section.twocharts h2.charttitle {
   text-align: center;
   font-weight: 400;
@@ -508,7 +509,7 @@ header #nav .navbar ul li a.active {
   clear: both;
 }
 @media (min-width: 960px) {
-  /* line 31, ../../../components/sass/modules/_theproblem.scss */
+  /* line 35, ../../../components/sass/modules/_theproblem.scss */
   #theproblem section.onechart {
     max-width: 60%;
     margin-left: auto;
@@ -521,7 +522,7 @@ header #nav .navbar ul li a.active {
     clear: both;
   }
 }
-/* line 38, ../../../components/sass/modules/_theproblem.scss */
+/* line 42, ../../../components/sass/modules/_theproblem.scss */
 #theproblem section.onechart
 h2.charttitle {
   text-align: center;
@@ -530,7 +531,7 @@ h2.charttitle {
   padding: 5px 0;
   line-height: 110%;
 }
-/* line 48, ../../../components/sass/modules/_theproblem.scss */
+/* line 52, ../../../components/sass/modules/_theproblem.scss */
 #theproblem h3.chartsubtitle {
   color: #000000;
   font: 400 1em/1.5em "Roboto", sans-serif;

@@ -4,9 +4,13 @@
 
     @include backImage2('../images/school/students.jpg');
     
+    margin: 25px 0;
+
     @include display-flex();
     @include align-items(center);
     @include justify-content(center);
+
+
 
     } //students
 
