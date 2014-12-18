@@ -52,7 +52,7 @@ gulp.task('jsFooter', function() {
 });
 
 gulp.task('jsHeader', function() {
-  gulp.src(jsFooterSources)
+  gulp.src(jsHeaderSources)
     .pipe(concat('headerscript.js'))
     .pipe(browserify())
     .on('error', gutil.log)

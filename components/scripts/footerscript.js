@@ -3,7 +3,9 @@ $(function() {
 
   var isTouch = 'ontouchstart' in document.documentElement;
 
-  //window height
+$(function() {
+
+//window height
   var wheight = $(window).height(); //get height of the window
 
   $('.fullheight').css('height', wheight);
@@ -12,6 +14,9 @@ $(function() {
     var wheight = $(window).height(); //get height of the window
     $('.fullheight').css('height', wheight);
   }) //on resize
+
+});
+
 
 // Animated Scrolling
   $('a[href*=#]:not([href=#])').click(function() {
@@ -144,7 +149,7 @@ $(document).ready(function(){
 //play audio
 $(document).ready(function(){
   var obama = $('#obama');
-  $("#downarrow").click(function(){
+  $("#play").click(function(){
     obama.get(0).play();
   });
 });

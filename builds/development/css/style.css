@@ -226,6 +226,7 @@ header .fullheight .hgroup p:after {
 /* line 51, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p img {
   max-width: 55px;
+  cursor: pointer;
 }
 @media (min-width: 960px) {
   /* line 42, ../../../components/sass/modules/_intro.scss */

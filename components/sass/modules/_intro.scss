@@ -50,6 +50,7 @@ header {
         @include text-shadow($dark 0 0 40px);
         img {
              max-width: 55px;
+             cursor: pointer;
         } //img
 
         @include breakpoint($medium) {
