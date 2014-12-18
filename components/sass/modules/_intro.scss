@@ -39,6 +39,18 @@ header {
                 
       } //h2
 
+      img#play {
+      display: block;
+      max-width: 25px;
+      cursor: pointer;
+      margin: 0 auto;
+      padding-top: 5px;
+
+      @include breakpoint($medium) {
+        max-width: 30px;
+      }
+      }
+
       p {
         @include clearfix;
         text-align: center;
@@ -49,13 +61,16 @@ header {
         margin: 0 auto;
         @include text-shadow($dark 0 0 40px);
         img {
-             max-width: 55px;
+             max-width: 35px;
              cursor: pointer;
         } //img
 
         @include breakpoint($medium) {
           width: 70%;
           font-size: 1.3em;
+          img {
+             max-width: 55px;
+          }
         }
 
 

@@ -77,6 +77,7 @@ gulp.task('compass', function() {
 
 gulp.task('watch', function() {
   gulp.watch(jsFooterSources, ['jsFooter']);
+  gulp.watch(jsHeaderSources, ['jsHeader']);
   gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass']);
   gulp.watch('builds/development/*.html', ['html']);
 });

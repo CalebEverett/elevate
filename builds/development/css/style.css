@@ -205,6 +205,20 @@ header .fullheight .hgroup h2 {
   }
 }
 /* line 42, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup img#play {
+  display: block;
+  max-width: 25px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+@media (min-width: 960px) {
+  /* line 42, ../../../components/sass/modules/_intro.scss */
+  header .fullheight .hgroup img#play {
+    max-width: 30px;
+  }
+}
+/* line 54, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p {
   text-align: center;
   font-size: 1.1em;
@@ -223,16 +237,20 @@ header .fullheight .hgroup p:before, header .fullheight .hgroup p:after {
 header .fullheight .hgroup p:after {
   clear: both;
 }
-/* line 51, ../../../components/sass/modules/_intro.scss */
+/* line 63, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup p img {
-  max-width: 55px;
+  max-width: 35px;
   cursor: pointer;
 }
 @media (min-width: 960px) {
-  /* line 42, ../../../components/sass/modules/_intro.scss */
+  /* line 54, ../../../components/sass/modules/_intro.scss */
   header .fullheight .hgroup p {
     width: 70%;
     font-size: 1.3em;
+  }
+  /* line 71, ../../../components/sass/modules/_intro.scss */
+  header .fullheight .hgroup p img {
+    max-width: 55px;
   }
 }
 
