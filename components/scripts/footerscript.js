@@ -77,14 +77,55 @@ $(function() {
   }).setPin('#nav').addTo(controller);
 
 
-  if(!isTouch) {
+//fade in Elevate intro
+    var titleOrigin = {
+      opacity: 0,
+      scale: 0,
+    }
+
+    var titleDest = {
+      repeat: 0,
+      yoyo: false,
+      bottom: 0,
+      opacity: 1,
+      scale: 1,
+      ease: Back.easeOut
+    }
     
+    var titleTween = TweenMax.staggerFrom(
+      $("#welcome").children(),
+      0.5, titleOrigin,0.25);
 
-   
+    var pin = new ScrollScene({
+      triggerElement: '#welcome',
+      offset: -topoffset-100,
+      duration: 100
+    }).setTween(titleTween)
+      .addTo(controller);
 
-  } //not a touch device
+//fade student photo
+/*var photoTween = TweenMax.staggerFrom($('#students'),1,{autoAlpha:0},0);
+
+var photoScene = ScrollScene({
+    triggerElement: '#students'
+    }).setTween(photoTween)
+      .addTo(controller);
+
+*/
+
+//animate strong text
+$('strong').each(function(){
+var currentStrong = $(this);
 
 
+var tweenStrong = new TimelineMax()
+.to(currentStrong, 0.25, {css: {fontWeight: 400, textShadow:"0px 0px 20px rgba(18, 112, 200, 1)"}});
+
+var scene = new ScrollScene({triggerElement: currentStrong, offset: -$(window).height()*0.7})
+.setTween(tweenStrong)
+.addTo(controller);
+
+});//animate strong text
 
 
 }); //on load
@@ -149,7 +190,22 @@ $(document).ready(function(){
 //play audio
 $(document).ready(function(){
   var obama = $('#obama');
-  $("#play").click(function(){
-    obama.get(0).play();
+  $("#player").click(function(){
+    if (!obama[0].paused){
+      obama[0].pause();           
+      $("#player").attr("src","images/misc/play.png");
+    }
+    else {
+      obama[0].play();           
+      $("#player").attr("src","images/misc/pause.png");
+    }
   });
 });
+
+
+//s page loader while page loads
+$(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+

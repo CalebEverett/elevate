@@ -29,7 +29,7 @@ if (env==='development') {
 jsFooterSources = [
   'components/scripts/jqloader.js',
   'components/scripts/TweenMax.min.js',
-  'components/scripts/jquery.scrollmagic.min.js',
+  'components/scripts/jquery.scrollmagic.min.js', 
   'components/scripts/footerscript.js',
   'components/scripts/charts.js',
 ];

@@ -15,4 +15,9 @@ ul {
 	display: none;
 }
 
+section#modelchart {
+	 @include backImage3('../images/misc/elevatemodel.png');
+	 height: 600px;
+}
+
 }

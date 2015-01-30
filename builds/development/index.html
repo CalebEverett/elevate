@@ -3,18 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Elevate</title>
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px|Roboto:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/headerscript.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-18526383-1', 'auto');
+    ga('send', 'pageview');
+  </script>
   <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
+  <div class="se-pre-con"></div>
   <header id="intro">
     <article class="fullheight">
        <div class="hgroup">
+         <a><img id="player" src="images/misc/play.png" alt="player"></a>
          <h2>“And at the heart of the American ideal is this sense that we’re in it together, that nobody is guaranteed success but everybody has got access to the possibilities of success...”</h2>
          <p>--President Barack Obama, College Opportunity Summit, December 4, 2014</p>
-         <a><img id="play" src="images/misc/play.png" alt="play"></a>
          <p><a id="downarrow" href="#welcome"><img src="images/misc/orangearrow.png" alt="down arrow"></a></p>
          <p><audio id="obama">
         <source src="images\audio\ObamaCollegeOpportunity.mp3" type="audio/mpeg">
@@ -63,7 +73,7 @@
         </section>
       </section>
       <p>Unfortunately, our education system is leaving behind millions of people; millions of people who in many respects, have the most to gain from additional education. We are leaving behind the people who are trying to make it up the very first rung of the life improvement ladder, going from not making it to being able to pay the bills, from doing menial labor to having a decent job, from wanting more for their kids to being proud of the example they are setting them.</p>
-      <p>The problem begins in our K-12 system where <strong>as many as two million young adults graduate high school each year unprepared to succeed in college.</strong>  63% of high school graduates in 2014 were not prepared to read at the college level and the problem is even worse among people of color.<a href='#references'><sup id="two">2</sup></a> In 2014 less than 30% of Hispanic and less than 20% of African-American high school graduates were prepared for college level reading and math.</p>
+      <p>The problem begins in our K-12 system where <strong class="animated">as many as two million young adults graduate high school each year unprepared to succeed in college.</strong >  63% of high school graduates in 2014 were not prepared to read at the college level and the problem is even worse among people of color.<a href='#references'><sup id="two">2</sup></a> In 2014 less than 30% of Hispanic and less than 20% of African-American high school graduates were prepared for college level reading and math.</p>
       <section class="twocharts">
         <section class="chart">
         <h2 class="charttitle">2012 High School Graduates by Race</h2>
@@ -80,7 +90,7 @@
           <p class="chartnote"><a href="http://www.act.org/research/policymakers/cccr14/pdf/CCCR14-NationalReadinessRpt.pdf">Source</a>: The Condition of College and Career Readiness 2014. ACT.<p>
         </section>
       </section>
-      <p>A large portion of those enrolling in higher education do not complete their studies. 41 percent of those enrolling in a four-year college fail to obtain a Bachelor’s degree within six years.<a href='#references'><sup id="three">3</sup></a> For those who graduated high school unprepared for college, the results are dismal. Fully 67 percent of those enrolling in open admissions colleges fail to obtain a Bachelor’s degree within six years and <strong>over 80 percent of those enrolling in community colleges fail to obtain a degree within three years.</strong> Each year 1.7 million students begin college in remediation, including a majority of community college students — but <strong>only one in ten remedial students ever graduate.</strong><a href='#references'><sup id="four">4</sup></a></p>
+      <p>A large portion of those enrolling in higher education do not complete their studies. 41 percent of those enrolling in a four-year college fail to obtain a Bachelor’s degree within six years.<a href='#references'><sup id="three">3</sup></a> For those who graduated high school unprepared for college, the results are dismal. Fully 67 percent of those enrolling in open admissions colleges fail to obtain a Bachelor’s degree within six years and <strong class="animated">over 80 percent of those enrolling in community colleges fail to obtain a degree within three years.</strong> Each year 1.7 million students begin college in remediation, including a majority of community college students — but <strong>only one in ten remedial students ever graduate.</strong><a href='#references'><sup id="four">4</sup></a></p>
       <section class="onechart">
         <section class="chart">
         <h2 class="charttitle">College Completion Rates by Race and Institution</h2>
@@ -105,6 +115,8 @@
     <h1>The Solution</h1>
     <p>What people who have graduated from high school unprepared for college need to succeed in higher education, first and foremost, is education focused on solving their most pressing issue, their financial survival. They are struggling to pay the bills so <strong>these students need career focused education that enables them to begin decent jobs as quickly as possible.</strong> They need a structured, directed approach to their education with lots of opportunities to learn by doing and to improve their basic employability skills. And most importantly <strong>they need a lot of support and personal interaction</strong>, especially early on.<a href='#references'><sup id="six">6</sup></a><sup>,</sup><a href='#references'><sup id="seven">7</sup></a></p>
     <p>Elevate will develop a world class model of education designed specifically for high school graduates unprepared for college. Elevate will deliver <strong>affordable, highly-structured, career-focused</strong> education with a <strong>competency-based, technology-enabled</strong> curriculum taught by <strong>exceptional instructors</strong>. Complemented by <strong>intensive services and support</strong>, Elevate programs will empower its students to complete their first step in higher education and begin promising careers.</p>
+    <section id="modelchart">
+    </section>
     <section>
       <h2>Affordable</h2>
       <p>Elevate programs will be affordable because they will be short, leverage technology to both improve instruction and reduce administrative costs, and utilize federal student aid and other grants as funding sources.<button id="toggleafford">More...</button></p>

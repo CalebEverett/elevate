@@ -1,6 +1,21 @@
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../images/misc/loading.gif') center no-repeat #fff;
+ }
+
 header {
   .fullheight {
     @include backImage('../images/school/graduation.jpg');
+    width: 100%;
+    height: 100%;
 
     @include display-flex();
     @include align-items(flex-end);
@@ -26,7 +41,7 @@ header {
         line-height: 120%;
         width: 90%;
         margin: 0 auto;
-        margin-top: 15px;
+        margin-top: 0px;
         padding: 10px;
         text-align: center;
         @include text-shadow($dark 0 0 40px);
@@ -39,7 +54,7 @@ header {
                 
       } //h2
 
-      img#play {
+      img#player {
       display: block;
       max-width: 25px;
       cursor: pointer;

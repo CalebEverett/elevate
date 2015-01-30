@@ -23,7 +23,7 @@ var legendFontSize = 14;
           chartArea: {height: '85%', width: '50%', left: '40%', top: '5%'},
           fontName: 'Roboto',
           fontSize: 16,
-          legend: { position: 'none' },
+          legend: { position: 'none' }
 
         };
 

@@ -38,6 +38,27 @@
   background-size: cover;
 } //backImage2
 
+@mixin backImage3(
+  $image,
+  $grDir: to bottom,
+  $opStart: 0,
+  $opEnd: 0,
+  $bgPos: center center
+  ) {
+  background: linear-gradient(
+    $grDir,
+    rgba(0,0,0, $opStart),
+    rgba(0,0,0, $opEnd)
+  ),url($image);
+  background-repeat: no-repeat;
+  background-position: $bgPos; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+} //backImage3
+
+
 
 @mixin clearfix {
   &:before,
